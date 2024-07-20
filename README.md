@@ -17,7 +17,7 @@ Sigue estos pasos para configurar el entorno de desarrollo:
 
    Clona este repositorio en tu máquina local:
 
-   bash
+   ```bash
    git clone https://github.com/tuusuario/RealtrackAPI.git
    cd RealtrackAPI
 
@@ -25,35 +25,35 @@ Sigue estos pasos para configurar el entorno de desarrollo:
 
    Crea un entorno Conda usando el archivo *environment.yml*:
 
-   bash
+   ```bash
    conda env create --prefix ./entorno1 -f environment.yml
 
 3. *Activar el Entorno*
 
    Activa el entorno Conda recién creado:
 
-   bash
+   ```bash
    conda activate ./entorno1
 
 4. **Instalar Dependencias**
 
    Si no usas Conda, puedes instalar las dependencias manualmente con pip:
 
-   bash
+   ```bash
    pip install -r requirements.txt
 
 5. *Migraciones de Base de Datos*
 
    Aplica las migraciones para configurar la base de datos:
 
-   bash
+   ```bash
    python manage.py migrate
 
 6. **Ejecutar el Servidor de Desarrollo**
 
    Inicia el servidor de desarrollo de Django:
 
-   bash
+   ```bash
    python manage.py runserver
   
   La API estará disponible en http://127.0.0.1:8000/.
